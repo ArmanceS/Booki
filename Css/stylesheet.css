@@ -11,7 +11,8 @@ a {
 }
 
 h1, h2 {
-    font-size: 22px
+    font-size: 22px;
+    margin: 0
 }
 
 h3 {
@@ -243,7 +244,8 @@ ul {
     background-color: #fff;
     border-radius: 20px;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    box-shadow: 4px 4px 10px lightgrey, -4px -4px 10px lightgrey
 }
 
 .accommodations-gallery:hover {
@@ -268,6 +270,18 @@ ul {
     font-size: 12px;
     margin: 5px 0 0 15px
 }
+/*grey stars*/
+
+.accommodations-gallery:nth-child(1) i:last-child,
+.accommodations-gallery:nth-child(3) i:last-child,
+.accommodations-gallery:nth-child(4) i:last-child,
+.accommodations-gallery:nth-child(5) i:last-child {
+    color: #f2f2f2
+}
+
+.accommodations-gallery:nth-child(4) i:nth-child(4) {
+    color: #f2f2f2
+}
 
 .view-more {
     margin: 30px auto;
@@ -281,7 +295,61 @@ ul {
 /* ASIDE */
 
 .right-part {
-    width: 30%;
+    width: 32%;
     background-color: #f2f2f2;
     border-radius: 20px
+}
+
+.aside-header {
+    display: flex;
+    width: 83%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 42px auto 0
+}
+
+.fa-chart-line {
+    font-size: 18px
+}
+
+.popular-gallery-content {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 480px;
+    justify-content: space-between
+}
+
+.popular-gallery {
+    height: 30%;
+    width: 83%;
+    display: flex;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px lightgrey, -4px -4px 10px lightgrey
+}
+
+.popular-gallery-img {
+    width: 33%;
+    height: 95%;
+    border-radius: 20px 0 0 20px;
+    margin-left: 5px;
+    object-fit: cover;
+    align-self: center
+}
+
+.align {
+    height: 80%;
+    width: 61%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center
+
+}
+
+.popular-gallery:nth-child(1) i:last-child,
+.popular-gallery:nth-child(2) i:last-child {
+    color: #f2f2f2
 }
