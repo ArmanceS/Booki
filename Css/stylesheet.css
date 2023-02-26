@@ -25,7 +25,8 @@ h4 {
 }
 
 p {
-    font-size: 16px
+    font-size: 16px;
+    margin: 0
 }
 
 .euro {
@@ -33,11 +34,15 @@ p {
 }
 
 .fa-solid {
-    color: #0065FC
+    color: #0065fc
 }
 
 ul, li {
     list-style: none
+}
+
+body {
+    margin: 0 50px
 }
 
 /*-----HEADER-----*/
@@ -45,5 +50,157 @@ ul, li {
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 44px 0 0 5px
+}
+
+.header-logo {
+    width: 61px
+}
+
+.nav-link {
+    padding: 41px 30px 0
+}
+
+.nav-link:hover {
+    border-top: 3px solid #0065fc;
+    color: #0065fc
+}
+
+/*-----RESEARCH-----*/
+
+.research {
+    margin: 55px 0 0 5px
+}
+/*title*/
+
+.title h1 {
+    margin-bottom: 0
+}
+
+.title p {
+    margin-top: 10px
+}
+/*input*/
+
+.search-bar {
+    display: flex;
+    margin-top: 20px
+}
+
+.fa-location-dot {
+    color: #000;
+    background-color: #f2f2f2;
+    font-size: 18px;
+    padding: 15px 16px;
+    border: 1px solid #f2f2f2;
+    border-radius: 15px 0px 0px 15px
+}
+
+#search-input {
+    padding: 14px;
+    border: 2px solid #f2f2f2
+}
+
+#search-input::placeholder {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold
+}
+
+.button {
+    color: #fff;
+    font-size: 18px;
+    background-color: #0065fc;
+    padding: 14px;
+    border: 1px solid #0065fc;
+    border-radius: 0 15px 15px 0
+}
+
+button:hover {
+    cursor: pointer
+}
+
+.button-deskop {
+    font-weight: bold
+}
+
+.button-phone {
+    display: none
+}
+/*filters*/
+
+ul {
+    padding-left: 0
+}
+
+#filters-content {
+    font-weight: bold;
+    margin-top: 30px
+}
+
+.filters-base {
+    width: 80%;
+    display: flex;
     align-items: center
 }
+
+.filters-title {
+    font-size: 16px;
+    flex-grow: 0.05;
+    margin: 0
+}
+
+.filters-flex {
+    flex-grow: 0.5;
+    display: flex;
+    justify-content: space-between
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    border: 2px solid #f2f2f2;
+    border-radius: 30px
+}
+
+.filters .fa-solid {
+    padding: 10px;
+    background-color: #deebff;
+    border: 1px solid #deebff;
+    border-radius: 25px
+}
+
+.filters-flex li:nth-child(2) .fa-solid {
+    padding: 10px 12px
+}
+
+.filters p {
+    margin: 0 10px
+}
+
+.filters:hover {
+    transform: scale(1.2);
+    background-color: #f2f2f2
+}
+
+.filters:hover .fa-solid {
+    transform: rotate(-0.1turn)
+}
+/*footer*/
+
+.info {
+    margin: 35px 0 0 0;
+    display: flex;
+    align-items: center
+}
+
+.fa-info {
+    font-size: 10px;
+    padding: 5px 8px;
+    border: 1px solid #f2f2f2;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+/*-----MAIN-----*/
