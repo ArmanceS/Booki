@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Sur Booki, plannifiez vos vacances et trouvez les hébergements et activités de votre choix dans la ville que vous voulez.">
+    <meta name="description"
+        content="Sur Booki, plannifiez vos vacances et trouvez les hébergements et activités de votre choix dans la ville que vous voulez.">
     <title>Booki, agence de réservation de logements</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,10 +33,12 @@
             <input id="search-input" type="search" name="searchinput" aria-label="rechercher"
                 placeholder="Marseille, France">
             <button class="button button-deskop">Rechercher</button>
-            <button class="button button-phone"><i class="fa-solid fa-magnifying-glass"></i></button> <!--aria-label rechercher ?-->
+            <button class="button button-phone"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <!--aria-label rechercher ?-->
         </form>
         <ul id="filters-content">
-            <li class="filters-base"><h2 class="filters-title">Flitres</h2>
+            <li class="filters-base">
+                <h2 class="filters-title">Flitres</h2>
                 <ul class="filters-flex">
                     <li>
                         <a href="" class="filters">
@@ -219,71 +222,60 @@
     <section class="activities">
         <h2 id="activites">Activités à Marseille</h2>
         <div class="activities-content">
-            <a class="card-1-3" href="">
+            <a class=" activities-card card-1-3" href="">
                 <img class="img-1-3" src="Images/Activites/Small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                     alt="Photo du Vieux Port">
                 <h3>Vieux Port</h3>
             </a>
-            <div class="block-2-4">
-                <a class="card-2" href="">
-                    <img class="img-2-4" src="Images/Activites/Small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                        alt="Photo du Fort de Promègues">
-                    <h3>Fort de Promègues</h3>
-                </a>
-                <a class="card-3" href="">
-                    <img class="img-2-4" src="Images/Activites/Small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                        alt="Photo des Iles du Frioul">
-                    <h3>Iles du Frioul</h3>
-                </a>
-            </div>
-            <a class="card-1-3" href="">
+            <a class=" activities-card card-2" href="">
+                <img class="img-2-4" src="Images/Activites/Small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                    alt="Photo du Fort de Promègues">
+                <h3>Fort de Promègues</h3>
+            </a>
+            <a class=" activities-card card-3" href="">
+                <img class="img-2-4" src="Images/Activites/Small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                    alt="Photo des Iles du Frioul">
+                <h3>Iles du Frioul</h3>
+            </a>
+            <a class=" activities-card card-1-3" href="">
                 <img class="img-1-3" src="Images/Activites/Small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                     alt="Photo du Parc National des Calanques">
                 <h3>Parc National des Calanques</h3>
             </a>
-            <div class="block-2-4">
-                <a class="card-5" href="">
-                    <img class="img-2-4" src="Images/Activites/Small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                        alt="Photo de Notre-Dame-de-la-Garde">
-                    <h3>Notre-Dame-de-la-Garde</h3>
-                </a>
-                <a class="card-6" href="">
-                    <img class="img-2-4" src="Images/Activites/Small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                        alt="Photo du Parc Longchamp">
-                    <h3>Parc Longchamp</h3>
-                </a>
-            </div>
+            <a class=" activities-card card-5" href="">
+                <img class="img-2-4" src="Images/Activites/Small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                    alt="Photo de Notre-Dame-de-la-Garde">
+                <h3>Notre-Dame-de-la-Garde</h3>
+            </a>
+            <a class=" activities-card card-6" href="">
+                <img class="img-2-4" src="Images/Activites/Small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                    alt="Photo du Parc Longchamp">
+                <h3>Parc Longchamp</h3>
+            </a>
+
         </div>
     </section>
     <footer class="footer">
-        <nav class="about">
+        <nav class="footer-links">
             <ul class="list-footer">
-                <li>
-                    <h4>A propos</h4>
-                    <ul class="list-footer">
+                <li class="about"><h4>A propos</h4>
+                    <ul>
                         <li><a href="">Fonctionnement du site</a></li>
                         <li><a href="">Conditions générales de vente</a></li>
                         <li><a href="">Données et confidentialité</a></li>
                     </ul>
                 </li>
-            </ul>
-        </nav>
-        <nav class="accommodations">
-            <ul class="list-footer">
-                <li>
-                    <h4>Nos hébergements</h4>
-                    <ul class="list-footer">
+
+                <li class="housing"><h4>Nos hébergements</h4>
+                    <ul>
                         <li><a href="">Charte qualité</a></li>
                         <li><a href="">Soumettre votre hôtel</a></li>
                     </ul>
                 </li>
-            </ul>
-        </nav>
-        <nav class="assistance">
-            <ul class="list-footer">
-                <li>
+
+                <li class="assistance">
                     <h4>Assistance</h4>
-                    <ul class="list-footer">
+                    <ul>
                         <li><a href="">Centre d'aide</a></li>
                         <li><a href="">Nous contacter</a></li>
                     </ul>

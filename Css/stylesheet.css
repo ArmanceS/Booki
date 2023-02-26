@@ -43,7 +43,13 @@ ul, li {
 }
 
 body {
-    margin: 0 50px
+    margin: 0 50px;
+    padding-bottom: 280px
+}
+
+html, body {
+    min-height: 100vh;
+    position: relative
 }
 
 /*-----HEADER-----*/
@@ -136,6 +142,7 @@ ul {
 }
 
 #filters-content {
+    max-width: 1900px;
     font-weight: bold;
     margin-top: 30px
 }
@@ -148,8 +155,7 @@ ul {
 
 .filters-title {
     font-size: 16px;
-    flex-grow: 0.05;
-    margin: 0
+    margin: 0 40px 0 0
 }
 
 .filters-flex {
@@ -284,6 +290,8 @@ ul {
 }
 
 .view-more {
+    font-size: 18px;
+    font-weight: bold;
     margin: 30px auto;
     width: 90%
 }
@@ -330,6 +338,10 @@ ul {
     box-shadow: 4px 4px 10px lightgrey, -4px -4px 10px lightgrey
 }
 
+.popular-gallery:hover {
+    transform: scale(1.1)
+}
+
 .popular-gallery-img {
     width: 33%;
     height: 95%;
@@ -352,4 +364,103 @@ ul {
 .popular-gallery:nth-child(1) i:last-child,
 .popular-gallery:nth-child(2) i:last-child {
     color: #f2f2f2
+}
+
+/*-----ACTIVITIES-----*/
+
+.activities {
+    margin-top: 60px
+}
+
+.activities-content {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 390px;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.activities-card {
+    width: 23%;
+    box-shadow: 4px 4px 10px lightgrey;
+    border-radius: 20px
+}
+
+.activities-card:hover {
+    cursor: pointer
+}
+
+.activities-card h3{
+    margin-top: 10px
+}
+
+.img-1-3, .img-2-4 {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0
+}
+
+.card-1-3 {
+    height: 100%
+}
+
+.img-1-3 {
+    height: 88%
+}
+
+.card-2 {
+    height: 54%;
+}
+
+.card-2 img {
+    height: 77%
+}
+
+.card-3 {
+    height: 37%
+}
+
+.card-3 img {
+    height: 68%
+}
+
+.card-5, .card-6 {
+    height: 45%
+}
+
+.card-5 img, .card-6 img {
+ height: 72%
+}
+
+/*-----FOOTER-----*/
+
+.footer {
+    width: 100%;
+    margin-top: 60px;
+    background-color: #f2f2f2;
+    position: absolute;
+    bottom: 0
+}
+
+.footer-links {
+    width: 90%;
+    margin: 45px auto 0
+}
+
+.list-footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0
+}
+
+.list-footer li {
+    margin: 10px 0
+}
+.about {
+    flex-grow: 0.2
+}
+
+.housing, .assistance {
+    flex-grow: 0.4
 }
