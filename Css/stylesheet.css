@@ -307,7 +307,7 @@ h3,
     width: 90%
 }
 
-.view-more:hover {
+.view-more a:hover {
     text-decoration: underline
 }
 
