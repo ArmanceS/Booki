@@ -105,6 +105,7 @@ html, body {
 
 #search-input {
     padding: 14px;
+    flex-grow: 0.1;
     border: 2px solid #f2f2f2
 }
 
@@ -221,7 +222,6 @@ ul {
 
 .left-part {
     width: 65%;
-    min-width: 580px; /* 992px*/
     background-color: #f2f2f2;
     border-radius: 20px
 
@@ -481,10 +481,6 @@ h3, .accommodations-gallery p {
 /* 768px =< Tablet=< 991px*/
 
 @media screen and (max-width: 991.5px) {
-    #search-input {
-        padding-right: 40px
-    }
-
     .filters-title {
         margin-right: 20px
     }
@@ -566,6 +562,7 @@ h3, .accommodations-gallery p {
 @media screen and (max-width: 767.5px) {
     body {
         margin: 0;
+        padding-bottom: 610px
     }
 
     .header {
@@ -595,6 +592,10 @@ h3, .accommodations-gallery p {
         width: 90%
     }
 
+    #search-input {
+        flex-grow: 0.9
+    }
+
     .filters-base {
         flex-wrap: wrap
     }
@@ -605,5 +606,91 @@ h3, .accommodations-gallery p {
 
     .filters-flex li {
         width: 48%
+    }
+
+    .button-deskop {
+        display: none
+    }
+
+    .button-phone {
+        display: inline-block
+    }
+
+    .button-phone .fa-solid {
+        color: #fff
+    }
+    
+    .center{
+        flex-direction: column-reverse;
+        margin-top: 25px
+    }
+
+    .right-part {
+        margin-top: 0;
+        border-radius: 0;
+    }
+
+    .popular-gallery-content {
+        flex-direction: column;
+        height: 580px;
+        margin-top: 25px
+    }
+
+    .popular-gallery {
+        height: 30%;
+        width: 100%;
+    }
+
+    .popular-gallery-img {
+        width: 40%
+    }
+
+    .left-part {
+        background-color: #fff
+    }
+
+    #accommodations-gallery-content {
+        height: 1300px
+    }
+
+    .accommodations-gallery {
+        width: 100%;
+        height: 15%;
+        min-height: 15%
+    }
+    .view-more {
+        display: none
+    }
+
+    .activities {
+        width: 90%;
+        margin: 100px auto 0
+    }
+
+    #activites {
+        width: 40%
+    }
+
+    .activities-content {
+        height: 1250px
+    }
+
+    .activities-card {
+        height: 15%;
+        width: 100%
+    }
+
+    .activities-card .img-1-3, .activities-card .img-2-4 {
+        height: 70%
+    }
+
+    .list-footer {
+        flex-direction: column
+    }
+}
+
+@media screen and (max-width: 340px) {
+    #search-input {
+        padding: 0
     }
 }
