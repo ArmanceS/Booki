@@ -18,7 +18,7 @@ h2 {
 
 h3 {
     font-size: 16px;
-    margin: 3px 0 0 15px
+    margin: 3px 0 0 8px
 }
 
 h4 {
@@ -251,7 +251,7 @@ ul {
 }
 
 .accommodations-gallery {
-    width: 30%;
+    width: 31%;
     height: 45%;
     background-color: #fff;
     border-radius: 20px;
@@ -273,20 +273,15 @@ ul {
     margin-top: 5px
 }
 
-h3,
-.accommodations-gallery p {
-    width: 90%
-}
-
 .accommodations-gallery p,
 .align p {
     font-size: 14px;
-    margin: 5px 0 0 15px
+    margin: 3px 0px 3px 8px
 }
 
 .star {
     font-size: 12px;
-    margin: 5px 0 0 15px
+    margin: 0 0 0 8px
 }
 
 /*grey stars*/
@@ -338,12 +333,12 @@ h3,
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 480px;
+    height: 460px;
     justify-content: space-between
 }
 
 .popular-gallery {
-    height: 30%;
+    height: 29%;
     width: 83%;
     display: flex;
     background-color: #fff;
@@ -356,7 +351,7 @@ h3,
 }
 
 .popular-gallery-img {
-    width: 33%;
+    width: 43%;
     height: 95%;
     border-radius: 20px 0 0 20px;
     margin-left: 5px;
@@ -396,15 +391,13 @@ h3,
 .activities-card {
     width: 23%;
     box-shadow: 4px 4px 10px lightgrey;
-    border-radius: 20px
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap
 }
 
 .activities-card:hover {
     cursor: pointer
-}
-
-.activities-card h3 {
-    margin-top: 10px
 }
 
 .img-1-3,
@@ -484,17 +477,6 @@ h3,
 
 /*-----MEDIA QUERRY-----*/
 
-@media screen and (max-width: 1235px) {
-    .accommodations-gallery {
-        height: 48%
-    }
-
-    .card-4 h3,
-    .card-5 h3 {
-        margin-top: 0
-    }
-}
-
 /* 768px =< Tablet=< 991px*/
 
 @media screen and (max-width: 991.5px) {
@@ -527,10 +509,6 @@ h3,
     .left-part,
     .right-part {
         width: 100%
-    }
-
-    .accommodations-gallery {
-        height: 45%
     }
 
     .right-part {
@@ -572,14 +550,11 @@ h3,
         height: 63%
     }
 
-    .activities-card h3 {
-        margin-top: 0
+    .align h3 {
+        font-size: 14px
     }
-}
-
-@media screen and (max-width: 827px) {
-    .accommodations-gallery {
-        height: 48%
+    .align p {
+        font-size: 13px
     }
 }
 
@@ -608,7 +583,7 @@ h3,
         border-bottom: 2px solid #f2f2f2
     }
 
-    .nav-link:hover {
+    .nav-link:hover, .nav-link:active {
         border-top: none;
         border-bottom: 2px solid #0065fc
     }
@@ -721,10 +696,6 @@ h3,
     .activities-card .img-1-3,
     .activities-card .img-2-4 {
         height: 70%
-    }
-
-    .activities-card h3 {
-        margin-top: 15px
     }
 
     .list-footer {
